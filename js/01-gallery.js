@@ -30,7 +30,7 @@ function onGalleryItemClick(evt) {
         return;
     };
       
-    const instance = basicLightbox.create (`
+    const instance = basicLightbox.create(`
         <img src="${evt.target.dataset.source}">
     `,
     {
@@ -41,14 +41,14 @@ function onGalleryItemClick(evt) {
         window.removeEventListener('keydown', onEscKeyPress);
       },
     },
-    instance.show();
-  );
+    );
+  instance.show()
 
     function onEscKeyPress(evt) {
         if (evt.code === 'Escape') {
-            instance.close();
+            instance.close()
         }
-        // console.log(evt);
+        console.log(evt);
     }
 }
 
