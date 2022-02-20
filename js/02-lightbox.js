@@ -19,11 +19,11 @@ function createGalleryMarkup(items) {
     }).join('');    
 };
 
-    let lightbox = new SimpleLightbox('.gallery a', {
-        captionsData: 'alt',
-        captionDelay: 250,
-    });
+let lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt',
+    captionDelay: 250,
+});
 
-    lightbox.on();
+lightbox.on();
 
 console.log(galleryItems);
