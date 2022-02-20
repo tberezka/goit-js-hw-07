@@ -52,4 +52,4 @@ function onGalleryItemClick(evt) {
     }
 }
 
-
+console.log(galleryItems);
