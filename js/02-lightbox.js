@@ -19,20 +19,11 @@ function createGalleryMarkup(items) {
     }).join('');    
 };
 
-galleryContainer.addEventListener('click', onGalleryItemClick);
-
-function onGalleryItemClick(evt) {
-
-    evt.preventDefault();
-    const isItemImgEl = evt.target.classList.contains('gallery__image')
-    if (!isItemImgEl) {
-        return;
-    };
-    
     let lightbox = new SimpleLightbox('.gallery a', {
         captionsData: 'alt',
         captionDelay: 250,
     });
-}
+
+    lightbox.on();
 
 console.log(galleryItems);
