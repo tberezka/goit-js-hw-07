@@ -24,6 +24,8 @@ let lightbox = new SimpleLightbox('.gallery a', {
     captionDelay: 250,
 });
 
-lightbox.on();
+lightbox.on(() => {
+    lightbox.next();
+});
 
 console.log(galleryItems);
